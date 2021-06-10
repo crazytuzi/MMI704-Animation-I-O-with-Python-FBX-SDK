@@ -1,4 +1,5 @@
-ImportScene.py is the main Python file, Animation.py is only used by it.
+ImportScene.py is the main Python file, Animation.py is only used by it to import/export FBX files and save/edit their animation data.
+Code to edit animation data can be added in Animation.py/EditAndExportAnims function, as this is only a template. 
 Jogging.fbx is the example input FBX.
 
 When run, ImportScene.py will produce ExportedScene.fbx with the output FBX file, and output.txt containing the print output of the code.
