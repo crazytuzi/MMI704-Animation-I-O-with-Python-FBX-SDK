@@ -105,7 +105,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
 
         elif channel.animType == "TY":
@@ -120,7 +120,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
 
         elif channel.animType == "TZ":
@@ -135,7 +135,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
         elif channel.animType == "RX":
             if not rotation:
@@ -149,7 +149,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
         elif channel.animType == "RY":
             if not rotation:
@@ -163,7 +163,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
         elif channel.animType == "RZ":
             if not rotation:
@@ -177,7 +177,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
         elif channel.animType == "SX":
             if not scaling:
@@ -191,7 +191,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
         elif channel.animType == "SY":
             if not scaling:
@@ -205,7 +205,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
         elif channel.animType == "SZ":
             if not scaling:
@@ -219,7 +219,7 @@ def fillLayer(pNode,pAnimLayer,layerNo):
                 for key in channel.animKeys:
                     lTime.SetSecondDouble(key.time.GetSecondDouble())
                     lKeyIndex = lCurve.KeyAdd(lTime)[0]
-                    lCurve.KeySet(lKeyIndex, lTime, key.val, FbxAnimCurveDef.eInterpolationLinear)
+                    lCurve.KeySet(lKeyIndex, lTime, key.val)
                 lCurve.KeyModifyEnd()
 
     for lModelCount in range(pNode.GetChildCount()):
